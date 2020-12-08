@@ -1,0 +1,36 @@
+// the slider stylesheet only
+
+.homesilder {
+    background-image: url('/assets/img/pexels-abdullah-ghatasheh-2608353.jpg');
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+    
+    .overllay {
+        z-index: 3;
+        @include overllay;
+        // background: linear-gradient(319deg, rgba($mainColor, 0.3), transparent);
+        background: rgba(#000,0.7)
+    }
+    .welcome-slide {
+        z-index: 4;
+        // margin-top: 230px;
+        color: #f1f1f1;
+        .mainFont{
+            font-size: 30px;
+            span {
+                color: $mainColor;
+            }
+            
+        }
+        p{
+            font-family: $secFont;
+            font-weight: 300;
+            font-size: 14px;
+        }
+        a {
+            text-decoration: none;
+        }
+
+    }
+}

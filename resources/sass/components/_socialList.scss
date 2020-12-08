@@ -1,0 +1,45 @@
+.social-list {
+  position: fixed;
+  top: 45%;
+  right:0px;
+  z-index: 900;
+  width: 400px;
+  border: 1px solid #101e2b47;
+
+  .btn-bar-show {
+    cursor: pointer;
+    margin-left: -37px;
+    padding-right:0 ;
+    padding-left: 0;
+    i {
+      background: $mainColor;
+      padding: 10px;
+      font-size: 20px;
+      color: rgb(248, 248, 248);
+    }
+  }
+
+  .list-social-items {
+
+    background: url('/assets/img/bg-12.jpg');
+    // background: #fafaf2;
+    background-size: cover;
+    background-position: top;
+
+    padding: 30px 20px;
+    font-family: $secFont;
+    
+    .list-span-title{
+      font-family: arial;
+      color: #dc3545;
+      margin-bottom: 15px;
+      
+      .list-title{
+        color: #000;
+        font-weight: bold;
+        font-family: $mainFont;
+        display: block;
+      }
+    }
+  }
+}

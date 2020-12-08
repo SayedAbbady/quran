@@ -1,0 +1,160 @@
+.pricetable {
+  padding: 50px 0;
+  
+  .header{
+    .mainFont {
+      color: $thirdColor;
+      font-weight: bold;
+      font-size: 35px;
+    }
+    .subtitle {
+      margin-bottom: 30px;
+      font-size: 18px;
+    }
+  }
+  .price-card {
+      cursor: grab;
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+      box-shadow: 2px 2px 9px #00000010;
+      position: relative;
+      overflow: hidden;
+      border-radius: 5px;
+    .mainFont{
+      padding: 11px 66px;
+      top: 15px;
+      left: -71px;
+      background: $mainColor;
+      color: #fff;
+      position: absolute;
+      transform: rotate(-45deg);
+    }
+    header {
+      // background: #f1f1f1;
+      background: url("/assets/img/bg-12.jpg");
+      padding: 36px 0;
+      background-position: top;
+      background-size: cover;
+      p{
+        font-family: $secFont;
+      }
+      .price-number {
+        font-family: $mainFont;
+        font-size: 20px;
+        sup{
+          font-size: 18px;
+          margin-right: 5px;
+          top: -20px;
+        }
+        div{
+          display: inline-block;
+          margin: -15px 0 0 17px;
+          position: relative;
+          top: -9px;
+        }
+        span{
+          font-size: 50px;
+          font-family: $secFont;
+          font-weight: bold;
+          margin: 0 -5px;
+          color: $mainColor;
+        }
+      }
+    }
+    .items {
+      overflow: hidden;
+      font-family: $secFont;
+      font-weight: 300;
+      p{
+        margin: 10px;
+      }
+    }
+    .btnPrime{
+      margin-bottom: 36px;
+    }
+  }
+  .price-controller {
+      font-family: $secFont;
+
+      .subtitle {
+          margin: 40px 0 0 0;
+          font-weight: 300;
+      }
+
+      span {
+          margin-bottom: 15px;
+          font-weight: 300;
+      }
+
+  }
+  
+  .owl-carousel .owl-nav {
+  position: absolute;
+  width: 99.3%;
+  top: 45%;
+  left: 3px;
+  
+  button.owl-next{
+    position: absolute;
+    right: 0;
+    background: #f1f1f1;
+    color: $mainColor;
+    font-size: 25px;
+    width:45px;
+    height:45px;
+    border-radius: 50%;
+    @include transition(.3s);
+    box-shadow: 3px 3px 5px #ccc;
+    &:hover{
+      color: #f1f1f1;
+      background: $mainColor;
+    }  
+    &:focus{
+      outline: none;
+    }
+  }
+  
+  button.owl-prev{
+    position: absolute;
+    left: 0;
+    color: $mainColor;
+    background: #f1f1f1;
+    font-size: 25px;
+    width:45px;
+    height:45px;
+    border-radius: 50%;
+    @include transition(.3s);
+    box-shadow: 3px 3px 5px #ccc;
+    &:hover{
+      color: #f1f1f1;
+      background: $mainColor;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.owl-carousel .owl-dots {
+  text-align: center;
+  
+  button.owl-dot{
+    border: 1px solid $mainColor;
+    width: 12px;
+    height: 12px;
+    margin: 0 2px;
+    border-radius: 50%;
+    &:focus {
+      outline: none;
+    }
+  }
+  button.owl-dot.active {
+    background: $mainColor
+  }
+  
+  
+}
+
+}

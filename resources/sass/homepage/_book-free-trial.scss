@@ -1,0 +1,26 @@
+.book-free-trial{
+  min-height: 150px;
+  display:flex;
+  align-items:center;
+  background: url('/assets/img/bg-12.jpg');
+  .row {
+    margin-top: 20px;
+    padding-bottom: 30px;
+
+    p{
+      font-family: $mainFont;
+      font-size: 27px;
+      font-weight: inherit;
+      text-align: center;
+      margin-top: 7px;
+    }
+    button {
+      padding: 10px 20px;
+      background: none;
+      border: none;
+      border: 1px solid $thirdColor;
+      font-family: $secFont;
+      outline: none;
+    }
+  }
+}

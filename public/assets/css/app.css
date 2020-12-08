@@ -1,0 +1,786 @@
+section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.owl-carousel {
+  position: relative;
+}
+
+.mainFont {
+  font-family: "Cinzel Decorative", cursive;
+}
+
+.white {
+  color: #fff;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.mainColor {
+  color: #57a68f;
+}
+
+.facebook {
+  color: #4267B2 !important;
+}
+
+.whatsapp {
+  color: #25D366 !important;
+}
+
+.google {
+  color: #DB4437 !important;
+}
+
+.btnPrime {
+  font-family: "Roboto Slab", serif;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  padding: 8px 10px 11px;
+  margin-top: 15px;
+  color: #fff;
+  border-radius: 5px;
+  background: #57a68f;
+}
+
+.btnPrime:hover {
+  background: #db9e30;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #57a68f;
+  border-radius: 30px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #db9e30;
+}
+
+.btnUpPageToFirst {
+  z-index: 999999;
+  position: fixed;
+  padding: 5px 10px 7px;
+  right: 3.5%;
+  bottom: 3.5%;
+  border: none;
+  outline: 0;
+  width: 45px;
+  background: #57a68f;
+  color: #f1f1f1;
+  border-radius: 2px;
+  display: none;
+  transition: all 0.7s ease-in-out;
+}
+
+.btnUpPageToFirst:hover {
+  background: #db9e30;
+}
+
+.showBtnUpPageToFirst {
+  display: block;
+}
+
+.social-list {
+  position: fixed;
+  top: 45%;
+  right: 0px;
+  z-index: 900;
+  width: 400px;
+  border: 1px solid #101e2b47;
+}
+
+.social-list .btn-bar-show {
+  cursor: pointer;
+  margin-left: -37px;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.social-list .btn-bar-show i {
+  background: #57a68f;
+  padding: 10px;
+  font-size: 20px;
+  color: #f8f8f8;
+}
+
+.social-list .list-social-items {
+  background: url("/assets/img/bg-12.jpg");
+  background-size: cover;
+  background-position: top;
+  padding: 30px 20px;
+  font-family: "Roboto Slab", serif;
+}
+
+.social-list .list-social-items .list-span-title {
+  font-family: arial;
+  color: #dc3545;
+  margin-bottom: 15px;
+}
+
+.social-list .list-social-items .list-span-title .list-title {
+  color: #000;
+  font-weight: bold;
+  font-family: "Cinzel Decorative", cursive;
+  display: block;
+}
+
+.homesilder {
+  background-image: url("/assets/img/pexels-abdullah-ghatasheh-2608353.jpg");
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.homesilder .overllay {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.homesilder .welcome-slide {
+  z-index: 4;
+  color: #f1f1f1;
+}
+
+.homesilder .welcome-slide .mainFont {
+  font-size: 30px;
+}
+
+.homesilder .welcome-slide .mainFont span {
+  color: #57a68f;
+}
+
+.homesilder .welcome-slide p {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.homesilder .welcome-slide a {
+  text-decoration: none;
+}
+
+.colorbackonly {
+  color: #fff;
+  background: #57a68f;
+}
+
+.colorbackonly .contacts-number {
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+.colorbackonly .contacts-number .method-name {
+  color: #f1f1f1;
+  filter: drop-shadow(2px 2px 1.2px #000);
+  font-weight: bold;
+}
+
+.colorbackonly .contacts-number .method {
+  filter: drop-shadow(1px 1px 1px #000);
+  color: #fff;
+}
+
+.navbar {
+  width: 100%;
+  z-index: 9;
+  background: url("/assets/img/bg-10.jpg");
+  background-position: right;
+  background-size: cover;
+}
+
+.navbar .justColor {
+  background: url("/assets/img/footer-pattern.png");
+}
+
+.navbar .navbar-brand img {
+  width: 100px;
+}
+
+.navbar .nav-item .nav-link {
+  font-family: "Cinzel Decorative", cursive;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar .nav-item .nav-link:hover {
+  color: #57a68f;
+}
+
+.navbar .nav-item.active .nav-link {
+  background: #57a68f;
+  color: #fff;
+}
+
+.navbar .centerLogo img {
+  width: 76px;
+  margin: 0 20px;
+}
+
+.about-us {
+  padding: 50px 0;
+}
+
+.about-us h1.mainFont {
+  line-height: 52px;
+  font-size: 37px;
+  margin: 16px 0;
+  position: relative;
+  color: #441a05;
+}
+
+.about-us h1.mainFont::before {
+  content: " ";
+  position: absolute;
+  left: -10px;
+  top: 2px;
+  width: 7px;
+  height: 50px;
+  background: #db9e30;
+}
+
+.about-us .about-desc {
+  font-family: "Roboto Slab", serif;
+  color: #9d9087;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.about-us .about-contact img {
+  width: 10%;
+  margin-right: 7px;
+  padding: 3px;
+}
+
+.about-us .about-contact span {
+  font-size: 16px;
+  font-family: "Roboto Slab", serif;
+}
+
+.about-us .about-contact span a {
+  color: #db9e30;
+}
+
+.about-us .img-about {
+  position: relative;
+}
+
+.about-us .img-about img {
+  width: 100%;
+}
+
+.about-us .img-about .overllay {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(87, 166, 143, 0.3), transparent);
+}
+
+.why-us {
+  padding: 50px 0;
+  background: url("/assets/img/bg-12.jpg");
+  background-size: cover;
+}
+
+.why-us .img-why {
+  position: relative;
+}
+
+.why-us .img-why img {
+  width: 100%;
+}
+
+.why-us .img-why .overllay {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(219, 158, 48, 0.7), rgba(219, 158, 48, 0.3));
+}
+
+.why-us h1.mainFont {
+  line-height: 52px;
+  font-size: 37px;
+  margin: 16px 0;
+  position: relative;
+  color: #441a05;
+}
+
+.why-us h1.mainFont::before {
+  content: " ";
+  position: absolute;
+  left: -10px;
+  top: 2px;
+  width: 7px;
+  height: 50px;
+  background: #db9e30;
+}
+
+.why-us .why-desc {
+  font-family: "Roboto Slab", serif;
+  color: #9d9087;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.pricetable {
+  padding: 50px 0;
+}
+
+.pricetable .header .mainFont {
+  color: #441a05;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.pricetable .header .subtitle {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.pricetable .price-card {
+  cursor: -webkit-grab;
+  cursor: grab;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  box-shadow: 2px 2px 9px #00000010;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.pricetable .price-card .mainFont {
+  padding: 11px 66px;
+  top: 15px;
+  left: -71px;
+  background: #57a68f;
+  color: #fff;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+
+.pricetable .price-card header {
+  background: url("/assets/img/bg-12.jpg");
+  padding: 36px 0;
+  background-position: top;
+  background-size: cover;
+}
+
+.pricetable .price-card header p {
+  font-family: "Roboto Slab", serif;
+}
+
+.pricetable .price-card header .price-number {
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 20px;
+}
+
+.pricetable .price-card header .price-number sup {
+  font-size: 18px;
+  margin-right: 5px;
+  top: -20px;
+}
+
+.pricetable .price-card header .price-number div {
+  display: inline-block;
+  margin: -15px 0 0 17px;
+  position: relative;
+  top: -9px;
+}
+
+.pricetable .price-card header .price-number span {
+  font-size: 50px;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  margin: 0 -5px;
+  color: #57a68f;
+}
+
+.pricetable .price-card .items {
+  overflow: hidden;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+}
+
+.pricetable .price-card .items p {
+  margin: 10px;
+}
+
+.pricetable .price-card .btnPrime {
+  margin-bottom: 36px;
+}
+
+.pricetable .price-controller {
+  font-family: "Roboto Slab", serif;
+}
+
+.pricetable .price-controller .subtitle {
+  margin: 40px 0 0 0;
+  font-weight: 300;
+}
+
+.pricetable .price-controller span {
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+
+.pricetable .owl-carousel .owl-nav {
+  position: absolute;
+  width: 99.3%;
+  top: 45%;
+  left: 3px;
+}
+
+.pricetable .owl-carousel .owl-nav button.owl-next {
+  position: absolute;
+  right: 0;
+  background: #f1f1f1;
+  color: #57a68f;
+  font-size: 25px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 3px 3px 5px #ccc;
+}
+
+.pricetable .owl-carousel .owl-nav button.owl-next:hover {
+  color: #f1f1f1;
+  background: #57a68f;
+}
+
+.pricetable .owl-carousel .owl-nav button.owl-next:focus {
+  outline: none;
+}
+
+.pricetable .owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  left: 0;
+  color: #57a68f;
+  background: #f1f1f1;
+  font-size: 25px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 3px 3px 5px #ccc;
+}
+
+.pricetable .owl-carousel .owl-nav button.owl-prev:hover {
+  color: #f1f1f1;
+  background: #57a68f;
+}
+
+.pricetable .owl-carousel .owl-nav button.owl-prev:focus {
+  outline: none;
+}
+
+.pricetable .owl-carousel .owl-dots {
+  text-align: center;
+}
+
+.pricetable .owl-carousel .owl-dots button.owl-dot {
+  border: 1px solid #57a68f;
+  width: 12px;
+  height: 12px;
+  margin: 0 2px;
+  border-radius: 50%;
+}
+
+.pricetable .owl-carousel .owl-dots button.owl-dot:focus {
+  outline: none;
+}
+
+.pricetable .owl-carousel .owl-dots button.owl-dot.active {
+  background: #57a68f;
+}
+
+.book-free-trial {
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  background: url("/assets/img/bg-12.jpg");
+}
+
+.book-free-trial .row {
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+
+.book-free-trial .row p {
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 27px;
+  font-weight: inherit;
+  text-align: center;
+  margin-top: 7px;
+}
+
+.book-free-trial .row button {
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  border: 1px solid #441a05;
+  font-family: "Roboto Slab", serif;
+  outline: none;
+}
+
+.our-courses {
+  padding: 50px 0;
+  perspective: 1000px;
+}
+
+.our-courses .header .mainFont {
+  color: #441a05;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.our-courses .header .subtitle {
+  margin-bottom: 40px;
+  margin-top: -15px;
+  font-size: 16px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+}
+
+.our-courses .service-container {
+  position: relative;
+  height: 348px;
+  background: url("/assets/img/bg-12.jpg");
+  background-position: top;
+  background-size: cover;
+  border-radius: 7px;
+  margin-bottom: 30px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.our-courses .service-container:hover {
+  transform: rotateY(180deg);
+}
+
+.our-courses .service-container .service-item {
+  position: absolute;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.our-courses .service-container .service-item .img-service {
+  padding: 30px 0;
+}
+
+.our-courses .service-container .service-item .img-service img {
+  width: 25%;
+  margin: auto;
+  filter: drop-shadow(1px 3px 3px #999);
+}
+
+.our-courses .service-container .service-item .caption-service h5 {
+  font-family: "Cinzel Decorative", cursive;
+  font-weight: 800;
+  color: #57a68f;
+}
+
+.our-courses .service-container .service-item .caption-service p {
+  padding: 12px;
+  padding-bottom: 30px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: #441a05;
+}
+
+.our-courses .service-container .service-details {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.our-courses .service-container .service-details ul {
+  list-style: none;
+  margin-top: 80px;
+}
+
+.our-courses .service-container .service-details ul li {
+  font-family: "Cinzel Decorative", cursive;
+  text-align: left;
+  margin: 10px 0;
+  font-weight: bold;
+  position: relative;
+}
+
+.our-courses .service-container .service-details ul li i {
+  margin: 4px 3px;
+  color: #57a68f;
+}
+
+.contact-us {
+  padding: 50px 0;
+  background-size: cover;
+  background-position: top;
+  background: #f1f1f1;
+}
+
+.contact-us .mainFont {
+  position: relative;
+  color: #441a05;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.contact-us .mainFont::before {
+  content: " ";
+  position: absolute;
+  left: -10px;
+  top: 0px;
+  width: 7px;
+  height: 40px;
+  background: #db9e30;
+}
+
+.contact-us .contact-items {
+  border-radius: 5px;
+  background: url("/assets/img/bg-12.jpg");
+  background-size: cover;
+  background-position: top;
+  box-shadow: 3px 3px 10px #00000010;
+}
+
+.contact-us .contact-items .info-contect {
+  padding: 50px 20px;
+}
+
+.contact-us .contact-items .info-contect h1 {
+  font-family: "Cinzel Decorative", cursive;
+  color: #57a68f;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contact-us .contact-items .info-contect h2 {
+  font-weight: 300;
+  font-size: 12px;
+  color: #441a05;
+  font-family: "Roboto Slab", serif;
+}
+
+.contact-us .contact-items .info-contect h2 span {
+  font-weight: bold;
+  color: #57a68f;
+}
+
+.contact-us .contact-items .info-contect .social-media-links {
+  width: 300px;
+  margin-top: 15px;
+}
+
+.contact-us .contact-items .info-contect .social-media-links a {
+  display: block;
+  font-weight: 300;
+  font-size: 13.5px;
+  font-family: "Roboto Slab", serif;
+  color: #441a05 !important;
+  transition: all 0.6s ease-in-out;
+  padding: 7px 10px;
+}
+
+.contact-us .contact-items form {
+  padding: 50px;
+}
+
+.contact-us .contact-items form p {
+  font-family: "Cinzel Decorative", cursive;
+  color: #57a68f;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.contact-us .contact-items form .form-mine {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: #424242;
+  font-size: 0.9em;
+  background: #fafafa;
+}
+
+.contact-us .contact-items form .form-mine:focus {
+  background: #fff;
+  border: 1px solid #ccc;
+  outline: 0;
+  box-shadow: 1px 0.2px 12px rgba(87, 166, 143, 0.5);
+}
+
+.contact-us .contact-items form .btnPrime {
+  font-family: "Cinzel Decorative", cursive;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+  padding: 10px 21px;
+  margin-top: 0px;
+  color: #fff;
+  border-radius: 5px;
+  background: #57a68f;
+}
+
+.contact-us .contact-items form .btnPrime:hover {
+  background: #db9e30;
+}
+
+footer.mainFooter {
+  background: #050815;
+  padding: 50px 0 20px;
+  color: #fff;
+  font-size: 11px;
+}
+
+footer.mainFooter .h5 {
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 14px;
+  font-weight: bold;
+}
+

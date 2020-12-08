@@ -1,0 +1,109 @@
+.contact-us {
+  padding: 50px 0;
+  // background: #fafaf2;
+  background-size: cover;
+  background-position: top;
+  background: #f1f1f1;
+  
+  .mainFont{
+    position: relative;
+    color: $thirdColor;
+    font-weight: bold;
+    font-size: 35px;
+    &::before {
+      content: " ";
+      position: absolute;
+      left: -10px;
+      top: 0px;
+      width: 7px;
+      height: 40px;
+      background: #db9e30;
+    }
+  }
+
+  .contact-items {
+    border-radius: 5px; 
+    background: url('/assets/img/bg-12.jpg');
+    background-size: cover;
+    background-position: top;
+    box-shadow: 3px 3px 10px #00000010;
+    .info-contect {
+      padding: 50px 20px;
+      h1{
+        font-family: $mainFont;
+        color: $mainColor;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      h2{
+        font-weight: 300;
+        font-size: 12px;
+        color: $thirdColor;
+        font-family: $secFont;
+        span {
+          font-weight: bold;
+          color: $mainColor;
+        }
+      }
+      .social-media-links {
+        width: 300px;
+        margin-top: 15px;
+        a{
+          display: block;
+          font-weight: 300;
+          font-size: 13.5px;
+          font-family: $secFont;
+          color: $thirdColor!important;
+          @include transition(.6s);
+          padding: 7px 10px;
+          
+        }
+      }
+    }
+    form{
+      padding: 50px;
+
+      p{
+        font-family: $mainFont;
+        color: $mainColor;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      .form-mine{
+        width: 100%;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        padding: 5px 10px;
+        border-radius: 4px;
+        color: #424242;
+        font-size: 0.9em;
+        background: #fafafa;
+        &:focus {
+          background: #fff;
+          border: 1px solid #ccc;
+          outline: 0;
+          box-shadow: 1px .2px 12px rgba($mainColor, .5);
+        }
+      }
+      .btnPrime {
+        font-family: $mainFont;
+        font-weight: bold;
+        // font-family: inherit;
+        font-size: 14px;
+        border: none;
+        outline: none;
+        text-transform: capitalize; 
+        transition: all 0.3s ease-in-out;
+        padding: 10px 21px;
+        margin-top: 0px; 
+        color: #fff;
+        border-radius: 5px;
+        background: $mainColor;
+        &:hover {
+          background: $secColor;
+        }
+      }
+    }
+  }
+}

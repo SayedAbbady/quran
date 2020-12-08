@@ -1,0 +1,22 @@
+.btnUpPageToFirst {
+  z-index: 999999;
+  position: fixed;
+  padding: 05px 10px 7px;
+  right: 3.5%;
+  bottom: 3.5%;
+  border: none;
+  outline: 0;
+  width: 45px;
+  background: $mainColor;
+  color: #f1f1f1;
+  border-radius: 2px;
+  display: none;
+  @include transition(.7s);
+  &:hover {
+    background: $secColor;
+  }
+  
+}
+.showBtnUpPageToFirst{
+  display: block;
+}

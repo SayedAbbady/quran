@@ -1,0 +1,107 @@
+//
+@mixin overllay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+@mixin transition ($time) {
+    transition: all $time ease-in-out;
+}
+
+$mainFont : 'Cinzel Decorative',cursive;
+$secFont : 'Roboto Slab',serif;
+
+$mainColor: #57a68f;
+$secColor: #db9e30;
+$thirdColor: #441a05;
+
+section {
+    min-height: 100vh;
+    display:flex;
+    align-items:center;
+}
+.owl-carousel{
+    position: relative;
+}
+.mainFont{
+    font-family: $mainFont; 
+} 
+.white{
+    color: #fff;
+}
+.bold{
+    font-weight: bold;
+}
+.mainColor{
+    color: $mainColor;
+} 
+.facebook{
+    color: #4267B2!important;
+}
+.whatsapp{
+    color: #25D366 !important;
+}
+.google{
+    color: #DB4437 !important;
+}
+.btnPrime {
+    font-family: $secFont;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    @include transition(.3s);
+    padding: 8px 10px 11px;
+    margin-top: 15px;
+    color: #fff;
+    border-radius: 5px;
+    
+    background: $mainColor;
+    &:hover {
+        background: $secColor;
+    }
+}
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $mainColor;
+    border-radius: 30px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $secColor;
+}
+
+@import "./components/_btnUpPageToFirst";
+
+@import "./components/_socialList";
+
+@import "./homepage/_homepage";
+
+@import "./homepage/_navbar";
+
+@import "./homepage/_about-us";
+
+@import "./homepage/_why-us";
+
+@import "./homepage/_priceplan";
+
+@import "./homepage/_book-free-trial";
+
+@import "./homepage/_our-courses";
+
+@import "./homepage/_contact-us";
+
+@import "./homepage/_footer";

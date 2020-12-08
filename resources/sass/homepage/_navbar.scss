@@ -1,0 +1,63 @@
+.colorbackonly{
+  color: #fff;
+  background: $mainColor;
+  .contacts-number {
+    padding: 10px 0;
+    // background: url("/asset/img/footer-pattern.png");
+    font-size: 18px;
+    .method-name{
+      color: #f1f1f1;
+      filter: drop-shadow(2px 2px 1.2px #000);
+      font-weight: bold;
+    }
+    .method {
+      filter: drop-shadow(1px 1px 1px #000);
+      color: #fff;
+    }
+  }
+}
+.navbar {
+  // position: absolute;
+  width: 100%;
+  z-index: 9;
+  background: url('/assets/img/bg-10.jpg');
+  background-position: right;
+  background-size: cover;
+  
+  .justColor {
+    background: url('/assets/img/footer-pattern.png');
+
+  }
+
+  .navbar-brand{
+    img {
+      width: 100px;
+    }
+  }
+
+  .nav-item {
+    
+    .nav-link {
+      font-family: $mainFont;
+      font-weight: bold;
+      color: rgba(#000,0.7);
+      &:hover {
+        color:$mainColor;
+      }
+    }
+  }
+  
+  .nav-item.active {
+    .nav-link {
+      background: $mainColor;
+      color: #fff;
+    }
+  }
+
+  .centerLogo {
+    img {
+      width: 76px;
+      margin: 0 20px;
+    }
+  }
+}

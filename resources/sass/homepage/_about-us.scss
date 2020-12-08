@@ -1,0 +1,53 @@
+.about-us{
+  padding: 50px 0;
+  h1.mainFont {
+    line-height: 52px;
+    font-size: 37px;
+    margin: 16px 0;
+    position: relative;
+    color: $thirdColor;
+
+    &::before{
+      content: " ";
+      position: absolute;
+      left: -10px;
+      top:2px;
+      width: 7px;
+      height: 50px;
+      background: $secColor;
+    }
+
+  }
+  .about-desc {
+    font-family: $secFont;
+    color: rgb(157, 144, 135);
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .about-contact {
+    img{
+      width: 10%;
+      margin-right: 7px;
+      padding: 3px;
+    }
+    span {
+      font-size: 16px;
+      font-family: $secFont;
+      a {
+        color: $secColor;
+      }
+    }
+    
+  }
+  .img-about {
+    position: relative;
+    img{
+      width: 100%;
+    }
+    .overllay{
+      z-index: 3;
+      @include overllay;
+      background: linear-gradient(90deg, rgba($mainColor, 0.3), transparent)
+    }
+  }
+}
