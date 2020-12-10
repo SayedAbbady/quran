@@ -18,7 +18,7 @@ class Plans extends Migration
             $table->string('p_title');
             $table->string('p_subtitle');
             $table->string('p_price');
-            $table->string('p_GBPprice');
+            $table->string('p_GBPprice')->nullable();
             $table->longText('p_feature');
             $table->longText('p_description')->nullable();
             $table->timestamps();

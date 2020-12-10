@@ -62,7 +62,10 @@
     }
     form{
       padding: 50px;
-
+      @media (max-width: 576px) {
+        padding: 30px;
+          
+      }
       p{
         font-family: $mainFont;
         color: $mainColor;
@@ -85,6 +88,9 @@
           outline: 0;
           box-shadow: 1px .2px 12px rgba($mainColor, .5);
         }
+      }
+      select.form-mine option:first-child {
+          color: #6c757d;
       }
       .btnPrime {
         font-family: $mainFont;

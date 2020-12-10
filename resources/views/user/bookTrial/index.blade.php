@@ -43,26 +43,30 @@
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110550.39964803508!2d31.119602918545084!3d30.0167697565721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458469235579697%3A0x4e91d61f9878fc52!2sGiza%2C%20El%20Omraniya%2C%20Giza%20Governorate!5e0!3m2!1sen!2seg!4v1603216248356!5m2!1sen!2seg" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
-
       <div class="col-lg-6">
-        <form method="POST" class="form-group row" action="{{route('trialbooking')}}">
-          @csrf
+        <form method="POST" class="form-group row" id="bookTrial" enctype="multipart/form-data">
+          
+          <input type="hidden" name="_token" value="{{csrf_token()}}">
           <p>Please Use The Form Below:</p>
-          {{$state??''}}
+          
           <div class="col-6">
-
+            <small class="text-danger errorClass font-weight-bold" id="firstnameErrors"></small>
             <input type="text"    class="form-mine" name="firstname" placeholder="First name*">
           </div>
           <div class="col-6">
+            <small class="text-danger errorClass font-weight-bold" id="lastnameErrors"></small>
             <input type="text"    class="form-mine" name="lastname" placeholder="Last name*">
           </div>
           <div class="col-12"> 
+            <small class="text-danger errorClass font-weight-bold" id="emailErrors"></small>
             <input type="email"    class="form-mine" name="email" placeholder="Email*">
           </div>
           <div class="col-12">
+            <small class="text-danger errorClass font-weight-bold" id="phoneErrors"></small>
             <input type="text"    class="form-mine" name="phone" placeholder="Phone*">
           </div>
           <div class="col-12">
+            <small class="text-danger errorClass font-weight-bold" id="genderErrors"></small>
             <select name="gender" id="" class="form-mine">
               <option value="">-- Gender* --</option>
               <option value="male">Male</option>
@@ -70,6 +74,7 @@
             </select>
           </div>
           <div class="col-12">
+            <small class="text-danger errorClass font-weight-bold" id="countryErrors"></small>
             <select name="country" id="" class="form-mine">
               <option value="">-- SELECT COUNTRY* --</option>
               @foreach ($country as $item)
@@ -81,17 +86,19 @@
             <select name="plan" id="" class="form-mine">
               <option value="">-- SELECT Plan --</option>
               @foreach ($plan as $item)
-              <option value="{{ $item->p_title.' => '. $item->p_subtitle.' => '.$item->p_price}}">{{ $item->p_title.' => '. $item->p_subtitle .' => '.$item->p_price}} $</option>
+              <option value="{{ $item->p_title.' => '. $item->p_subtitle}}">
+                {{ $item->p_title.' => '. $item->p_subtitle .' => '.$item->p_price}} $ = {{$item->p_GBPprice}} &pound;
+              </option>
               @endforeach
             </select>
           </div>
           <div class="col-12">
-            <textarea name="comment" id="" rows="3" class="form-mine" placeholder="Additional Comments (optional)"></textarea>
+            <textarea name="comment" id="" rows="4" class="form-mine" placeholder="Additional Comments (optional)"></textarea>
           </div>
           <div class="col-12">
 
             <div class="text-right">
-              <input type="submit"  class="btnPrime" name="submit">
+              <button type="submit" class="btnPrime" name="submit">Submit</button>
             </div>
           </div>
         </form>

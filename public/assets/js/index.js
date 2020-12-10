@@ -58,7 +58,7 @@ $(function() {
     
     var windowsize = ($(window).width()) - 30;
         
-        console.log((windowWidth - $('.social-list').outerHeight())/2);
+        
         
         var topList = (windowWidth - $('.social-list').outerHeight())/2;
 

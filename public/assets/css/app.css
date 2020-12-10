@@ -727,6 +727,12 @@ section {
   padding: 50px;
 }
 
+@media (max-width: 576px) {
+  .contact-us .contact-items form {
+    padding: 30px;
+  }
+}
+
 .contact-us .contact-items form p {
   font-family: "Cinzel Decorative", cursive;
   color: #57a68f;
@@ -750,6 +756,10 @@ section {
   border: 1px solid #ccc;
   outline: 0;
   box-shadow: 1px 0.2px 12px rgba(87, 166, 143, 0.5);
+}
+
+.contact-us .contact-items form select.form-mine option:first-child {
+  color: #6c757d;
 }
 
 .contact-us .contact-items form .btnPrime {

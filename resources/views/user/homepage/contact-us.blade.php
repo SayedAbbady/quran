@@ -36,37 +36,49 @@
       </div>
 
       <div class="col-lg-6">
-        <form action="{{route('trialbooking')}}" method="POST" class="form-group row">
-          @csrf
+        <form method="POST" class="form-group row" id="bookTrial" enctype="multipart/form-data">
+          <input type="hidden" name="_token" value="{{csrf_token()}}">
           <p>Please Use The Form Below:</p>
           <div class="col-6">
-
-            <input type="text"  name="firstname"  class="form-mine" name="" placeholder="First name">
+            <small class="text-danger errorClass font-weight-bold" id="firstnameErrors"></small>
+            <input type="text"  name="firstname"  class="form-mine" placeholder="First name*">
           </div>
           <div class="col-6">
-            <input type="text"  name="lastname"  class="form-mine" name="" placeholder="Last name">
+            <small class="text-danger errorClass font-weight-bold" id="lastnameErrors"></small>
+            <input type="text"  name="lastname"  class="form-mine" placeholder="Last name*">
           </div>
           <div class="col-12"> 
-            <input type="email"  name="email"  class="form-mine" name="" placeholder="Email">
+            <small class="text-danger errorClass font-weight-bold" id="emailErrors"></small>
+            <input type="email"  name="email"  class="form-mine" placeholder="Email*">
           </div>
           <div class="col-12">
-            <input type="text" name="phone"   class="form-mine" name="" placeholder="Phone">
+            <small class="text-danger errorClass font-weight-bold" id="phoneErrors"></small>
+            <input type="text" name="phone" class="form-mine" placeholder="Phone*">
           </div>
           <div class="col-12">
-            <select name="country" id="" class="form-mine">
-              <option value="">-- SELECT COUNTRY --</option>
+            <small class="text-danger errorClass font-weight-bold" id="genderErrors"></small>
+            <select name="gender" class="form-mine">
+              <option value="">-- Gender* --</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <small class="text-danger errorClass font-weight-bold" id="countryErrors"></small>
+            <select name="country" class="form-mine">
+              <option value="">-- SELECT COUNTRY* --</option>
               @foreach ($country as $item)
-              <option value="{{ $item->id }}">{{ $item->name }}</option>
+              <option value="{{ $item->name }}">{{ $item->name }}</option>
               @endforeach
             </select>
           </div>
           <div class="col-12">
-            <textarea name="comment" id="" rows="3" class="form-mine" placeholder="Additional Comments"></textarea>
+            <textarea name="comment" rows="3" class="form-mine" placeholder="Additional Comments"></textarea>
           </div>
           <div class="col-12">
 
             <div class="text-right">
-              <input type="submit"  class="btnPrime" name="">
+              <button type="submit" class="btnPrime" name="submit">Submit</button>
             </div>
           </div>
         </form>

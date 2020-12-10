@@ -14,9 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
+// auth route
 Auth::routes();
+// end auth route
 
+
+// get data to user side
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'HomeController@index')->name('home');
 
@@ -26,7 +29,7 @@ Route::get('/pricing', 'HomeController@userPlan')->name('userPlan');
 
 Route::get('/book/{id?}', 'HomeController@book')->name('book');
 
-Route::post('/store', 'HomeController@bookTrial')->name('trialbooking');
+
 
 Route::get('/programs', function() {
   $country = countries::all();
@@ -36,3 +39,10 @@ Route::get('/programs', function() {
   ]);
 
 })->name('programs');
+
+// End get data to user side
+
+
+// Ajax forms controllers
+Route::post('/store', 'HomeController@bookTrial')->name('trialbooking');
+// End Ajax forms controllers

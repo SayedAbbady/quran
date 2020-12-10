@@ -78,8 +78,16 @@ class HomeController extends Controller
             "b_comment"     =>$request->comment
         ]);
 
-        
-        return redirect()->route('book')->with('state','success booking');
+        if ($trial)
+            return response()->json([
+                "status"    => '1',
+                "msg"       => 'Thanks for sending us .. we will contact you'
+            ]);
+        else
+            return response()->json([
+                "status"    => '0',
+                "msg"       => 'Sorry you can try again'
+            ]);
         
     }
 }
