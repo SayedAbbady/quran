@@ -1,7 +1,7 @@
 $(function() {
   'use strict';
 
-  $("#bookTrial").on('submit',function (e) {
+  $("#bookTrial,#bookTrial2").on('submit',function (e) {
     e.preventDefault();
     // console.log(new FormData($(this)[0]));
     $(".errorClass").html('');

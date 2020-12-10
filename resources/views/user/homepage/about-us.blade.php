@@ -23,9 +23,10 @@
             <div class="about-contact">
               <img src="{{asset("/assets/img/whatsapp.svg")}}" alt="">
               <span class="">
-                <a class="whatsapp" href="https://api.whatsapp.com/send?phone=201015665071">
-                  +2 0101 566 5071
+                <a class="whatsapp" href="https://api.whatsapp.com/send?phone=201033452819">
+                  +2 0103 345 2819
                 </a>
+                
               </span>
             </div>
             

@@ -5,7 +5,7 @@
       <i class="fas fa-times"></i>
     {{-- <i class="fas fa-times"></i> --}}
     </div>
-      <form method="POST" id="bookTrial" enctype="multipart/form-data">
+      <form method="POST" id="bookTrial2" enctype="multipart/form-data">
         
         <input type="hidden" name="_token" value="{{csrf_token()}}">
         <div class="form-row">
