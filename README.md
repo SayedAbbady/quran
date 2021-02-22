@@ -9,3 +9,6 @@ The Quran Talent institute works to develop your skills in reading Arabic letter
 Our teachers have studied in the Department of Arabic Language, Islamic studies and the Qur’an at Al-Azhar University, and they specialize in Arabic because it is their mother tongue.
 
 
+## My role as a developer
+
+Create design and backend using Laravel framework
